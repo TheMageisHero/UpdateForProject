@@ -1,0 +1,400 @@
+{
+  "title": "Techtrees",
+  "type": "array",
+  "format": "tabs",
+  "uniqueItems": true,
+  "items": {
+    "type": "object",
+    "title": "Tree",
+    "format": "table",
+    "properties": {
+      "uid": {
+        "type": "string",
+        "title": "Unique Identifier"
+      },
+      "header": {
+        "type": "string",
+        "title": "Header line"
+      },
+      "tech_description": {
+        "type": "string",
+        "title": "Description"
+      },
+      "icon": {
+        "type": "integer",
+        "title": "Icon Index"
+      },
+      "bgimg": {
+        "type": "string",
+        "title": "Background Image File"
+      },
+      "nodes": {
+        "title": "Techtree Nodes",
+        "type": "array",
+        "format": "table",
+        "uniqueItems": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "technode": {
+              "type": "object",
+              "title": "Node",
+              "properties": {
+                "uid": {
+                  "type": "string",
+                  "title": "Unique Identifier"
+                },
+                "lane": {
+                  "type": "integer",
+                  "description": "On which lane the tech should appear.",
+                  "title": "Lane"
+                },
+                "depth": {
+                  "type": "integer",
+                  "description": "How deep into the tree the tech should appear.",
+                  "title": "Depth"
+                },
+                "header": {
+                  "type": "string",
+                  "title": "Header line"
+                },
+                "tech_description": {
+                  "type": "string",
+                  "title": "Description"
+                },
+                "bgimg": {
+                  "type": "string",
+                  "title": "Background Image File Name"
+                },
+                "parents": {
+                  "type": "array",
+                  "format": "table",
+                  "title": "Parents",
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "object",
+                    "title": "Parent",
+                    "properties": {
+                      "parent": {
+                        "type": "string",
+                        "description": "Unique Identifiers of the parent nodes."
+                      }
+                    }
+                  }
+                },
+                "neededParents": {
+                  "title": "needed Parents",
+                  "description": "Amount of parents that need to be active for the node to be learnable.",
+                  "type": "integer",
+                  "default": 0
+                },
+                "visibility": {
+                  "type": "object",
+                  "title": "Visibility Requirements",
+                  "description": "Switches that need to be true for the node to be visible.",
+                  "properties": {
+                    "switches": {
+                      "type": "array",
+                      "format": "table",
+                      "title": "Visibility Requirement Switches",
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "title": "Switch",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "title": "Switch ID"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "options": {
+                    "collapsed": true
+                  }
+                },
+                "costs": {
+                  "type": "object",
+                  "title": "Costs",
+                  "properties": {
+                    "gold": {
+                      "type": "integer",
+                      "title": "Gold Cost"
+                    },
+                    "jp": {
+                      "type": "integer",
+                      "title": "JP Cost",
+                      "description": "Requires Yanflys Jobpoints."
+                    },
+                    "items": {
+                      "type": "array",
+                      "format": "table",
+                      "title": "Item Costs",
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "title": "Item",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "title": "Item ID"
+                          },
+                          "amount": {
+                            "type": "integer",
+                            "title": "Amount"
+                          }
+                        }
+                      },
+                      "options": {
+                        "collapsed": true
+                      }
+                    },
+                    "weapons": {
+                      "type": "array",
+                      "format": "table",
+                      "title": "Weapon Costs",
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "title": "Weapon",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "title": "Weapon ID"
+                          },
+                          "amount": {
+                            "type": "integer",
+                            "title": "Amount"
+                          }
+                        }
+                      },
+                      "options": {
+                        "collapsed": true
+                      }
+                    },
+                    "armors": {
+                      "type": "array",
+                      "format": "table",
+                      "title": "Armor Costs",
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "title": "Armor",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "title": "Armor ID"
+                          },
+                          "amount": {
+                            "type": "integer",
+                            "title": "Amount"
+                          }
+                        }
+                      },
+                      "options": {
+                        "collapsed": true
+                      }
+                    }
+                  }
+                },
+                "onActivate": {
+                  "type": "object",
+                  "title": "On Activate",
+                  "description": "Effects that trigger when the node is learned by the player.",
+                  "properties": {
+                    "switches": {
+                      "type": "array",
+                      "format": "table",
+                      "title": "Changes to Switches",
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "title": "Switch Change",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "title": "Switch ID"
+                          },
+                          "value": {
+                            "type": "boolean",
+                            "title": "Value",
+                            "default": "false"
+                          }
+                        }
+                      },
+                      "options": {
+                        "collapsed": true
+                      }
+                    },
+                    "skills": {
+                      "type": "array",
+                      "format": "table",
+                      "title": "Learn Skills",
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "integer",
+                        "title": "Skill ID"
+                      }
+                    },
+                    "commonevents": {
+                      "type": "array",
+                      "format": "table",
+                      "title": "Run Common Events",
+                      "uniqueItems": true,
+                      "items": {
+                        "type": "object",
+                        "title": "Common Event",
+                        "properties": {
+                          "id": {
+                            "type": "integer",
+                            "title": "Common Event ID",
+                            "minimum": 1
+                          },
+                          "close": {
+                            "type": "boolean",
+                            "title": "Close Scene On Activate",
+                            "default": "false"
+                          }
+                        }
+                      },
+                      "options": {
+                        "collapsed": true
+                      }
+                    },
+                    "animation": {
+                      "type": "object",
+                      "title": "Play Animation",
+                      "description": "Animation played when this node is activated. Overwrites animation set for whole tree.",
+                      "properties": {
+                        "id": {
+                          "type": "integer",
+                          "title": "ID (1 to infinity)"
+                        }
+                      },
+                      "options": {
+                        "collapsed": true
+                      }
+                    },
+                    "stats": {
+                      "type": "object",
+                      "title": "Stat Changes",
+                      "required": true,
+                      "options": {
+                        "collapsed": true
+                      },
+                      "properties": {
+                        "0": {
+                          "type": "integer",
+                          "required": true,
+                          "title": "max HP"
+                        },
+                        "1": {
+                          "type": "integer",
+                          "required": true,
+                          "title": "max MP"
+                        },
+                        "2": {
+                          "type": "integer",
+                          "required": true,
+                          "title": "Attack"
+                        },
+                        "3": {
+                          "type": "integer",
+                          "required": true,
+                          "title": "Defense"
+                        },
+                        "4": {
+                          "type": "integer",
+                          "required": true,
+                          "title": "Magic Attack"
+                        },
+                        "5": {
+                          "type": "integer",
+                          "required": true,
+                          "title": "Magic Defense"
+                        },
+                        "6": {
+                          "type": "integer",
+                          "required": true,
+                          "title": "Agility"
+                        },
+                        "7": {
+                          "type": "integer",
+                          "required": true,
+                          "title": "Luck"
+                        }
+                      }
+                    },
+                    "eval": {
+                      "type": "object",
+                      "required": true,
+                      "title": "Run Custom Javascript Code",
+                      "properties": {
+                        "onActivate": {
+                          "type": "string",
+                          "required": true,
+                          "format": "textarea",
+                          "title": "Run custom JS code on node activation",
+                          "description": "Scope is Game_Actor."
+                        },
+                        "onDeactivate": {
+                          "type": "string",
+                          "required": true,
+                          "format": "textarea",
+                          "title": "Run custom JS code on node deactivation.",
+                          "description": "Scope is Game_Actor. Should be used to revert the on activation part."
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "animation": {
+        "type": "object",
+        "title": "Play Animation",
+        "description": "Default animation played when a node is activated. Used for the whole tree.",
+        "options": {
+          "collapsed": true
+        },
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "ID (1 to infinity)"
+          }
+        }
+      },
+      "hideGoldCost": {
+        "type": "boolean",
+        "required": true,
+        "title": "Don't show gold currency for this tree?",
+        "default": false
+      },
+      "hideJPCost": {
+        "type": "boolean",
+        "required": true,
+        "title": "Don't show Jobpoints (JP) as a currency for this tree?",
+        "default": false
+      },
+      "costItems": {
+        "type": "array",
+        "format": "table",
+        "required": true,
+        "uniqueItems": true,
+        "title": "Main Cost Items",
+        "description": "IDs of the items shown in the top right cost window for this techtree.",
+        "items": {
+          "type": "integer",
+          "title": "Item IDs"
+        },
+        "options": {
+          "collapsed": true
+        }
+      }
+    }
+  }
+}

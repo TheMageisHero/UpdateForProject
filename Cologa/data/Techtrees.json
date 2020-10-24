@@ -1,0 +1,1442 @@
+[
+  {
+    "uid": "HOLY",
+    "header": "Saint",
+    "tech_description": "Saint Tech Tree",
+    "icon": 70,
+    "bgimg": "Sword",
+    "nodes": [
+      {
+        "technode": {
+          "uid": "HOLY01",
+          "lane": 1,
+          "depth": 1,
+          "header": "Saint",
+          "tech_description": "Triggers the common event 5 after you close the skilltree.",
+          "bgimg": "Crystal",
+          "parents": [],
+          "neededParents": 0,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [
+              {
+                "id": 5,
+                "value": true
+              }
+            ],
+            "skills": [
+              141,
+              144
+            ],
+            "commonevents": [
+              {
+                "id": 5,
+                "close": false
+              }
+            ],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "HOLY02",
+          "lane": 1,
+          "depth": 2,
+          "header": "Holy Saint",
+          "tech_description": "Triggers the common event 6 as soon as you unlock it.",
+          "parents": [
+            {
+              "parent": "HOLY01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              145,
+              148
+            ],
+            "commonevents": [
+              {
+                "id": 6,
+                "close": true
+              }
+            ],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      }
+    ],
+    "hideGoldCost": false,
+    "hideJPCost": false,
+    "costItems": []
+  },
+  {
+    "uid": "Defender",
+    "header": "Defender",
+    "tech_description": "Support Archetype",
+    "icon": 8675,
+    "bgimg": "Hexagram",
+    "nodes": [
+      {
+        "technode": {
+          "uid": "Empath",
+          "lane": 1,
+          "depth": 1,
+          "header": "Empath",
+          "tech_description": "Your Heart by 5",
+          "bgimg": "Sword",
+          "parents": [],
+          "neededParents": 0,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              52,
+              56
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "HEAL02",
+          "lane": 1,
+          "depth": 3,
+          "header": "Healer",
+          "tech_description": "Advanced healing spells.",
+          "parents": [
+            {
+              "parent": "HEAL01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 100,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              53,
+              57
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "HEAL03",
+          "lane": 1,
+          "depth": 5,
+          "header": "Master of Healing",
+          "tech_description": "Mastery of healing spells.",
+          "parents": [
+            {
+              "parent": "HEAL02"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 200,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              54,
+              58
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "CURE01",
+          "lane": 2,
+          "depth": 2,
+          "header": "Adept of Curing",
+          "tech_description": "Basic curing spells",
+          "parents": [
+            {
+              "parent": "HEAL01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": [
+              {
+                "id": 5
+              }
+            ]
+          },
+          "costs": {
+            "gold": 100,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              60
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "CURE02",
+          "lane": 2,
+          "depth": 4,
+          "header": "Curator",
+          "tech_description": "Advanced curing spells.",
+          "parents": [
+            {
+              "parent": "CURE01"
+            },
+            {
+              "parent": "HEAL02"
+            }
+          ],
+          "neededParents": 2,
+          "visibility": {
+            "switches": [
+              {
+                "id": 5
+              }
+            ]
+          },
+          "costs": {
+            "gold": 200,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              61,
+              64
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "CURE03",
+          "lane": 2,
+          "depth": 6,
+          "header": "Master Curator",
+          "tech_description": "Mastery curing spells.",
+          "parents": [
+            {
+              "parent": "CURE02"
+            },
+            {
+              "parent": "HEAL03"
+            }
+          ],
+          "neededParents": 2,
+          "visibility": {
+            "switches": [
+              {
+                "id": 5
+              }
+            ]
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              62,
+              65
+            ],
+            "commonevents": [
+              {
+                "id": 5,
+                "close": false
+              }
+            ],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "WITCH01",
+          "lane": 3,
+          "depth": 2,
+          "header": "Witchery",
+          "tech_description": "Dark witchy spells.",
+          "parents": [],
+          "neededParents": 0,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              71,
+              72,
+              73
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "WITCH02",
+          "lane": 3,
+          "depth": 4,
+          "header": "Master Witchery",
+          "tech_description": "Dark masterful witchy spells.",
+          "parents": [
+            {
+              "parent": "WITCH01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              74,
+              75,
+              76
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      }
+    ],
+    "hideGoldCost": false,
+    "hideJPCost": false,
+    "costItems": []
+  },
+  {
+    "uid": "FIRE",
+    "header": "Fireomancer",
+    "tech_description": "A fireomancer is a powerful caster of fire magic. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet",
+    "icon": 64,
+    "bgimg": "",
+    "nodes": [
+      {
+        "technode": {
+          "uid": "FIRE01",
+          "lane": 2,
+          "depth": 1,
+          "header": "Fire Adept",
+          "tech_description": "Basic fire skills.",
+          "parents": [],
+          "neededParents": 0,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [
+              {
+                "id": 6,
+                "value": true
+              }
+            ],
+            "skills": [
+              99,
+              103
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "$gameSwitches.setValue(10, true);\nconsole.log($gameSwitches.value(10));",
+              "onDeactivate": "$gameSwitches.setValue(10, false);\nconsole.log($gameSwitches.value(10));"
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "FIRE02",
+          "lane": 1,
+          "depth": 2,
+          "header": "Fire Nuker",
+          "tech_description": "Single target fire spells",
+          "parents": [
+            {
+              "parent": "FIRE01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 500,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              100
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "FIRE03",
+          "lane": 1,
+          "depth": 3,
+          "header": "Fire Nuker Expert",
+          "tech_description": "Expert fire nuker skills.",
+          "parents": [
+            {
+              "parent": "FIRE02"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 1000,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [
+              {
+                "id": 7,
+                "value": true
+              }
+            ],
+            "skills": [
+              101
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "FIRE04",
+          "lane": 3,
+          "depth": 2,
+          "header": "Fire Stormer",
+          "tech_description": "Basic fire storm skills",
+          "parents": [
+            {
+              "parent": "FIRE01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 500,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [
+              {
+                "id": 8,
+                "value": true
+              }
+            ],
+            "skills": [
+              104
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "FIRE05",
+          "lane": 3,
+          "depth": 3,
+          "header": "Expert Fire Stormer",
+          "tech_description": "Expert fire storm skills",
+          "parents": [
+            {
+              "parent": "FIRE04"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 1000,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [
+              {
+                "id": 0,
+                "value": true
+              }
+            ],
+            "skills": [
+              105
+            ],
+            "commonevents": [],
+            "animation": {
+              "id": 66
+            },
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "FIRE06",
+          "lane": 2,
+          "depth": 2,
+          "header": "Fire Armor",
+          "tech_description": "Your knowledge about fire enfused your armor.",
+          "bgimg": "",
+          "parents": [
+            {
+              "parent": "FIRE01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [
+              {
+                "id": 23,
+                "amount": 1
+              }
+            ],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [],
+            "commonevents": [],
+            "animation": {
+              "id": 0
+            },
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 20,
+              "4": 0,
+              "5": 20,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "FIRE07",
+          "lane": 2,
+          "depth": 4,
+          "header": "Firesmith",
+          "tech_description": "Your knowledge about fire embues your weapon.",
+          "bgimg": "",
+          "parents": [
+            {
+              "parent": "FIRE06"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 500,
+            "items": [
+              {
+                "id": 24,
+                "amount": 1
+              }
+            ],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [],
+            "commonevents": [],
+            "animation": {
+              "id": 0
+            },
+            "stats": {
+              "0": 20,
+              "1": 20,
+              "2": 20,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "FIRE08",
+          "lane": 2,
+          "depth": 6,
+          "header": "Fireomancer",
+          "tech_description": "You are truly a Fireomancer",
+          "bgimg": "",
+          "parents": [
+            {
+              "parent": "FIRE07"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 1000,
+            "items": [
+              {
+                "id": 25,
+                "amount": 1
+              }
+            ],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              106
+            ],
+            "commonevents": [],
+            "animation": {
+              "id": 0
+            },
+            "stats": {
+              "0": 10,
+              "1": 10,
+              "2": 0,
+              "3": 10,
+              "4": 10,
+              "5": 10,
+              "6": 10,
+              "7": 10
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      }
+    ],
+    "animation": {
+      "id": 13
+    },
+    "hideGoldCost": false,
+    "hideJPCost": false,
+    "costItems": [
+      23,
+      24,
+      25
+    ]
+  },
+  {
+    "uid": "ICE",
+    "header": "Iceomancer",
+    "tech_description": "A iceomancer is a powerful caster of ice magic.",
+    "icon": 65,
+    "bgimg": "",
+    "nodes": [
+      {
+        "technode": {
+          "uid": "ICE01",
+          "lane": 2,
+          "depth": 1,
+          "header": "Ice Adept",
+          "tech_description": "Basic ice skills.",
+          "parents": [],
+          "neededParents": 0,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              107,
+              111
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "ICE02",
+          "lane": 1,
+          "depth": 2,
+          "header": "Ice Nuker",
+          "tech_description": "Single target ice spells",
+          "parents": [
+            {
+              "parent": "ICE01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 500,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              108
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "ICE03",
+          "lane": 1,
+          "depth": 3,
+          "header": "Ice Nuker Expert",
+          "tech_description": "Expert ice nuker skills.",
+          "parents": [
+            {
+              "parent": "ICE02"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 1000,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              109
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "ICE04",
+          "lane": 3,
+          "depth": 2,
+          "header": "Ice Stormer",
+          "tech_description": "Basic ice storm skills",
+          "parents": [
+            {
+              "parent": "ICE01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 500,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              112
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "ICE05",
+          "lane": 3,
+          "depth": 3,
+          "header": "Expert Ice Stormer",
+          "tech_description": "Expert ice storm skills",
+          "parents": [
+            {
+              "parent": "ICE04"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 1000,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              113
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      }
+    ],
+    "hideGoldCost": false,
+    "hideJPCost": false,
+    "costItems": []
+  },
+  {
+    "uid": "BOLT",
+    "header": "Thunderomancer",
+    "tech_description": "A thunderomancer is a powerful caster of thunder magic.",
+    "icon": 66,
+    "bgimg": "",
+    "nodes": [
+      {
+        "technode": {
+          "uid": "BOLT01",
+          "lane": 2,
+          "depth": 1,
+          "header": "Thunder Adept",
+          "tech_description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+          "parents": [],
+          "neededParents": 0,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 200,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              115,
+              119
+            ],
+            "commonevents": [],
+            "animation": {
+              "id": 15
+            },
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            },
+            "soundEffect": {
+              "name": "Applause2",
+              "volume": 100,
+              "pitch": 100,
+              "pan": 0
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "BOLT02",
+          "lane": 1,
+          "depth": 2,
+          "header": "Thunder Nuker",
+          "tech_description": "Single target thunder spells",
+          "parents": [
+            {
+              "parent": "BOLT01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 500,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              116
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "BOLT03",
+          "lane": 1,
+          "depth": 3,
+          "header": "Thunder Nuker Expert",
+          "tech_description": "Expert thunder nuker skills.",
+          "parents": [
+            {
+              "parent": "BOLT02"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 1000,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              117
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "BOLT04",
+          "lane": 3,
+          "depth": 2,
+          "header": "Thunder Stormer",
+          "tech_description": "Basic thunder storm skills",
+          "parents": [
+            {
+              "parent": "BOLT01"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 500,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              120
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      },
+      {
+        "technode": {
+          "uid": "BOLT05",
+          "lane": 3,
+          "depth": 3,
+          "header": "Expert Thunder Stormer",
+          "tech_description": "Expert thunder storm skills",
+          "parents": [
+            {
+              "parent": "BOLT04"
+            }
+          ],
+          "neededParents": 1,
+          "visibility": {
+            "switches": []
+          },
+          "costs": {
+            "gold": 0,
+            "jp": 1000,
+            "items": [],
+            "weapons": [],
+            "armors": []
+          },
+          "onActivate": {
+            "switches": [],
+            "skills": [
+              121
+            ],
+            "commonevents": [],
+            "stats": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0
+            },
+            "eval": {
+              "onActivate": "",
+              "onDeactivate": ""
+            }
+          }
+        }
+      }
+    ],
+    "hideGoldCost": false,
+    "hideJPCost": false,
+    "costItems": []
+  }
+]

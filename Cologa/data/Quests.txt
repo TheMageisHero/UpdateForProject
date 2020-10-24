@@ -1,0 +1,39 @@
+ <quest#>
+  name:New Beginnings
+  level:1
+  category:categoryName
+  difficulty:Some Words (Easy, Normal, whatever you want)
+  autoComplete:true/false
+  canAbandon:true/false
+  forceAccept:true/false
+  forceTurnin:true/false
+  qgiverName:Random name
+  location:Random words
+  <description>
+ Some words describing the quest
+ They can be multi-lined!
+ Careful though... no text wrap (yet)
+  <description>
+  <objectives>
+   {name:"Eat Breakfast", max:#, hidden:false}
+   {name:"Go To School", max:#, hidden:false}}
+  <objectives>
+  gold:0
+  exp:10
+  expScale:0     -modifies exp gained by +/-#% times difference between quest level and player level
+  <rewards>
+   #{type:"item" (or "weapon" or "armor"), id:0, amount:0}
+  <rewards>
+ <quest#>
+
+ #Name and Objectives are non-optional.
+ #The ID of the quest will be equal to the number used in <quest#> (Oh but keep them in order.. 
+  #bad things will happen other wise, no 1,2,4,5 : no 10, 563, 2, 5 : yes 1,2,3,4,5,6,7,8)
+ #Actually, they don't even need to be in order, just don't skip any numbers.
+
+ #Objective Tags:
+  #name:"Objective Name",
+  #max:objectiveMaxValue,
+  #hidden:true or false,
+  #monster:id,
+  #item:[type ("none","item","armor", or "weapon"), id],

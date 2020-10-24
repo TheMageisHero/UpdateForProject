@@ -1,0 +1,8 @@
+[
+null,
+{"id":1,"battlerName":"Candon 2","characterIndex":0,"characterName":"mzCandon","classId":1,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"mzCandon","traits":[],"initialLevel":1,"maxLevel":10,"name":"Candon","nickname":"Dasher","note":"<techtree>\nSentinel\n</techtree>\n<gachaImage:gachaCandon>\n<gachaNumLot:1>\n<gachaRank:5>","profile":""},
+{"id":2,"battlerName":"Logan S5","characterIndex":0,"characterName":"Logan","classId":2,"equips":[2,1,2,3,0],"faceIndex":0,"faceName":"Logan","traits":[],"initialLevel":1,"maxLevel":10,"name":"Logan","nickname":"Cinder","note":"<techtree>\nBrute\n</techtree>\n<gachaImage:gachaLogan>\n<gachaNumLot:5>\n<gachaRank:5>","profile":""},
+{"id":3,"battlerName":"AscestiaPowered","characterIndex":0,"characterName":"mzAscestia","classId":3,"equips":[2,1,2,3,0],"faceIndex":0,"faceName":"mzAscestia","traits":[],"initialLevel":1,"maxLevel":10,"name":"Lily","nickname":"Ascestia","note":"<techtree>\nStalker\n</techtree>\n<gachaImage:gachaLily>\n<gachaNumLot:25>\n<gachaRank:4>","profile":""},
+{"id":4,"battlerName":"mzAshley","characterIndex":0,"characterName":"mzAshley","classId":3,"equips":[2,1,2,3,0],"faceIndex":0,"faceName":"mzAshley","traits":[],"initialLevel":1,"maxLevel":10,"name":"Ashley","nickname":"Ascestia","note":"<techtree>\nDefender\n</techtree>\n<gachaImage:gachaAshley>\n<gachaNumLot:25>\n<gachaRank:4>","profile":""},
+{"id":5,"battlerName":"mzNarassa","characterIndex":0,"characterName":"mzNarassa","classId":5,"equips":[2,1,2,3,0],"faceIndex":0,"faceName":"mzNarassa","traits":[],"initialLevel":1,"maxLevel":10,"name":"Narassa","nickname":"Succubus","note":"<techtree>\nController\n</techtree>\n<gachaImage:gachaNarassa>\n<gachaNumLot:100>\n<gachaRank:3>","profile":""}
+]

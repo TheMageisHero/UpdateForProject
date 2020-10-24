@@ -1,0 +1,54 @@
+[
+  {
+    "key": "human",
+    "icon": 0,
+    "text": {
+      "description": "Humans possess exceptional drive\nand a great capacity to endure\nand expand, and as such\nare currently the dominant\nrace in the world.",
+      "noun": "Human",
+      "plural": "Humans",
+      "adjective": "Human"
+    },
+    "states": [
+      23
+    ]
+  },
+  {
+    "key": "nymphy",
+    "icon": 1,
+    "text": {
+      "description": "Humans possess exceptional drive\nand a great capacity to endure\nand expand, and as such\nare currently the dominant\nrace in the world.",
+      "noun": "Nymphy",
+      "plural": "Nymphy",
+      "adjective": "Nymphy"
+    },
+    "states": [
+      24
+    ]
+  },
+  {
+    "key": "memphy",
+    "icon": 2,
+    "text": {
+      "description": "Test",
+      "noun": "Memphy",
+      "plural": "Memphy",
+      "adjective": "Memphy"
+    },
+    "states": [
+      25
+    ]
+  },
+  {
+    "key": "shaper",
+    "icon": 0,
+    "text": {
+      "description": "Test",
+      "noun": "Shaper",
+      "plural": "Shapers",
+      "adjective": "Shaper"
+    },
+    "states": [
+      26
+    ]
+  }
+]

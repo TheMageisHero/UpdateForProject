@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":819,"scrollY":461},
+{"id":2,"expanded":true,"name":"Mageis H.Q.","order":2,"parentId":0,"scrollX":1216,"scrollY":1796},
+{"id":3,"expanded":false,"name":"H.Q. Interior","order":3,"parentId":2,"scrollX":982.8,"scrollY":553.1999999999999},
+{"id":4,"expanded":false,"name":"Training Dome","order":4,"parentId":2,"scrollX":1092,"scrollY":614.6666666666666},
+{"id":5,"expanded":true,"name":"???","order":5,"parentId":2,"scrollX":5372,"scrollY":5547},
+{"id":6,"expanded":false,"name":"Weapon Shop","order":6,"parentId":5,"scrollX":819,"scrollY":461}
+]
